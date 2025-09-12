@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Components.Routing
+
+@inherits Soenneker.Quark.Components.Element
+
+<NavLink href="@To" @attributes="BuildAttributes()">
+	@ChildContent
+</NavLink>
+
+@code {
+    [Parameter]
+    public string? To { get; set; }
+}
